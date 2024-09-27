@@ -1,9 +1,9 @@
 {
-    "name": "Task Flow",
+    "name": "task-flow",
     "private": true,
     "version": "Beta",
     "description": "Task Flow is a project and task management tool.",
-    "homepage": "https://username.github.io/task-flow",
+    "homepage": "https://joyal-george-kj.github.io/Task-Flow",
     "type": "module",
     "scripts": {
         "dev": "vite",

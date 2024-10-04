@@ -12,7 +12,7 @@ import Tags from "./Tags";
 function Form({ handleClick, topic, update = false, ...props }) {
     const dispatch = useDispatch();
     const [data, setData] = useState({});
-    const [tags, setTags] = useState([]);
+    const [tags, setTags] = useState(props?.TaskTags || []);
     
     const handleAddTags = () => {
         setTags([...tags, data.tag]);
@@ -85,7 +85,7 @@ function Form({ handleClick, topic, update = false, ...props }) {
                     name={topic}
                     className="shadow border px-4 py-2 focus-visible:outline-neutral-400 capitalize"
                     placeholder={topic + ":"}
-                    value={data[topic] || ''}
+                    value={topic === 'task' ? props?.TaskName : ''}
                     required
                     onChange={(e) => handleChange(e)}
                 />

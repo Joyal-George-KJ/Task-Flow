@@ -58,7 +58,7 @@ function TaskCard({ name, tags, status, TaskIndex, ProjectIndex }) {
                         className={`w-3 h-3 rounded-full border border-neutral-200 animate-pulse ${indicatorClass}`}
                     ></span>
                     <p className="capitalize text-neutral-700 font-base">
-                        {name} 
+                        {name}
                     </p>
                 </div>
                 <div className="w-1/6 flex gap-2 justify-end items-center h-fit">
@@ -89,7 +89,17 @@ function TaskCard({ name, tags, status, TaskIndex, ProjectIndex }) {
                             <i className="text-xl bi bi-pencil-square text-neutral-700 "></i>
                         </button>
                     )}
-                    {toggleForm && <Form handleClick={() => setToggleForm(!toggleForm)} topic={'task'} update={true} TaskIndex={TaskIndex} ProjectIndex={ProjectIndex} />}
+                    {toggleForm && (
+                        <Form
+                            handleClick={() => setToggleForm(!toggleForm)}
+                            topic={"task"}
+                            update={true}
+                            TaskIndex={TaskIndex}
+                            ProjectIndex={ProjectIndex}
+                            TaskName={name}
+                            TaskTags={tags}
+                        />
+                    )}
                 </div>
                 <div className="w-full flex gap-2 pt-4 flex-wrap border-t items-center">
                     <p className="text-xs font-medium">Tags: </p>

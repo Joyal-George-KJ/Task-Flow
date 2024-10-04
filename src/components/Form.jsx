@@ -85,7 +85,7 @@ function Form({ handleClick, topic, update = false, ...props }) {
                     name={topic}
                     className="shadow border px-4 py-2 focus-visible:outline-neutral-400 capitalize"
                     placeholder={topic + ":"}
-                    value={topic === 'task' ? props?.TaskName : ''}
+                    value={topic === 'task' ? props?.TaskName : data[topic]}
                     required
                     onChange={(e) => handleChange(e)}
                 />

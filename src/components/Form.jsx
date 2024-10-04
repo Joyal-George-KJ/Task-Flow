@@ -28,7 +28,7 @@ function Form({ handleClick, topic, update = false, ...props }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (topic === "task" && !update) {
-            const projectIndex = location.pathname.split("/")[2];
+            const projectIndex = location.hash.split('/')[2];
 
             dispatch(
                 setTask({

@@ -7,7 +7,7 @@ function Footer() {
                 <p>© 2024 TaskFlow. All rights reserved.</p>
                 <div className="mt-4">
                     <a
-                        href="https://github.com/Joyal-Geroge-KJ/TaskFlow"
+                        href="https://github.com/Joyal-George-KJ/TaskFlow"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mx-4 text-blue-600 hover:underline"
@@ -15,7 +15,7 @@ function Footer() {
                         GitHub Repo
                     </a>
                     <a
-                        href="https://Joyal-Geroge-KJ.github.io/TaskFlow"
+                        href="https://Joyal-George-KJ.github.io/TaskFlow"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mx-4 text-blue-600 hover:underline"

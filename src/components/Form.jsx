@@ -78,7 +78,7 @@ function Form({ handleClick, topic, update = false, ...props }) {
                 action=""
                 name="Controll Form"
                 onSubmit={(e) => handleSubmit(e)}
-                className="flex flex-col w-1/4 gap-4 p-4 border-2 shadow bg-neutral-50"
+                className="flex flex-col w-4/5 gap-4 p-4 m-4 border-2 shadow bg-neutral-50 md:w-2/5 lg:w-2/5"
             >
                 <input
                     type="text"

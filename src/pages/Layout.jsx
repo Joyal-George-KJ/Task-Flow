@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 function Layout() {
 
     return (
-        <div className="w-screen min-h-screen relative pb-0 bg-neutral-200">
+        <div className="relative w-screen min-h-screen pb-0 bg-neutral-200">
             <NavBar Link={Link} />
-            <div className="grid min-h-96 w-full gap-6 px-4 pt-4 relative">
+            <div className="grid min-h-[85vh] w-full gap-6 px-4 pt-4 relative">
                 <Outlet />
             </div>
             <Footer />

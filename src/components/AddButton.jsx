@@ -14,10 +14,10 @@ function AddButton({ topic }) {
     return (
         <>
             <button
-                className="px-2 border-2 rounded text-neutral-700 font-bold border-neutral-600 capitalize"
+                className="px-2 font-bold capitalize border-2 rounded text-neutral-700 border-neutral-600"
                 onClick={handleClick}
             >
-                <i className="bi bi-plus text-xl font-bold"></i>
+                <i className="text-xl font-bold bi bi-plus"></i>
                 {/* new {topic} */}
             </button>
             {toggleForm && (

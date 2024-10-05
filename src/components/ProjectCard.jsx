@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { deleteProject, updateLocalStorage } from "../store/slice/projectSlice";
 import Form from "./Form";
 
-function Card({ val, id }) {
+function ProjectCard({ val, id }) {
     const dispatch = useDispatch();
     let [toggleForm, setToggleForm] = useState(false);
 
@@ -18,11 +18,11 @@ function Card({ val, id }) {
     };
 
     return (
-        <div className="card w-[32.3%] min-h-64 shadow bg-neutral-200 rounded-xl flex justify-between items-end">
-            <div className="card-main w-full flex justify-between p-4 bg-neutral-50 rounded-b-xl">
+        <div className="flex items-end justify-between w-full shadow card min-h-64 bg-neutral-200 rounded-xl">
+            <div className="flex justify-between w-full p-4 card-main bg-neutral-50 rounded-b-xl">
                 <Link
                     to={`/task/${id}`}
-                    className="w-3/4 capitalize text-neutral-700 font-medium"
+                    className="w-3/4 font-medium capitalize text-neutral-700"
                 >
                     {val.projectName}
                 </Link>
@@ -38,4 +38,4 @@ function Card({ val, id }) {
     );
 }
 
-export default Card;
+export default ProjectCard;

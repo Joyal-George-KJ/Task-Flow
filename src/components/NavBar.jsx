@@ -25,7 +25,7 @@ function NavBar() {
     },[location]);
 
     return (
-        <nav className="flex justify-between bg-white p-4 px-8 shadow-sm sticky top-0 left-0 right-0 border-b border-neutral-700 z-50">
+        <nav className="sticky top-0 left-0 right-0 z-50 flex justify-between p-4 px-8 bg-white border-b shadow-sm border-neutral-700">
             <div className="flex gap-4">
                 {
                     myRoutes.map((val, ind) => <NavLink value={val} key={ind} active={active} />)

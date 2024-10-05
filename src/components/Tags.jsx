@@ -10,7 +10,7 @@ function Tags({ close = null, tags = [], setTags }) {
     return (
         <>
             {tags.map((val, ind) => (
-                <p key={ind} className="px-2 py-1 text-neutral-700 rounded text-xs text-center items-center flex shadow border capitalize">
+                <p key={ind} className="flex items-center px-2 py-1 text-xs text-center capitalize border rounded shadow text-neutral-700">
                     {val}
                     {close && (
                         <button
@@ -18,7 +18,7 @@ function Tags({ close = null, tags = [], setTags }) {
                             id={ind}
                             onClick={(e) => closeHandle(e)}
                         >
-                            <i id={ind} className="bi bi-x text-base ml-1 rounded-full text-neutral-800 font-extrabold"></i>
+                            <i id={ind} className="ml-1 text-base font-extrabold rounded-full bi bi-x text-neutral-800"></i>
                         </button>
                     )}
                 </p>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="flex justify-center bg-white p-4 px-8 shadow-sm border-t border-neutral-700 z-50">
+        <footer className="z-50 flex justify-center p-4 px-8 bg-white border-t shadow-sm border-neutral-700">
             <div className="text-center">
                 <p>© 2024 TaskFlow. All rights reserved.</p>
                 <div className="mt-4">
@@ -10,7 +10,7 @@ function Footer() {
                         href="https://github.com/Joyal-Geroge-KJ/TaskFlow"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline mx-4"
+                        className="mx-4 text-blue-600 hover:underline"
                     >
                         GitHub Repo
                     </a>
@@ -18,7 +18,7 @@ function Footer() {
                         href="https://Joyal-Geroge-KJ.github.io/TaskFlow"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline mx-4"
+                        className="mx-4 text-blue-600 hover:underline"
                     >
                         Website Link
                     </a>

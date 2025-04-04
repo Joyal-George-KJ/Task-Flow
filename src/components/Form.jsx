@@ -26,6 +26,7 @@ function Form({ handleClick, topic, update = false, ...props }) {
     };
 
     const handleSubmit = (e) => {
+        handleAddTags();
         e.preventDefault();
         if (topic === "task" && !update) {
             const projectIndex = location.hash.split('/')[2];

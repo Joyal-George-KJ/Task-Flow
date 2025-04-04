@@ -3,10 +3,9 @@
     "private": true,
     "version": "1.0.0",
     "description": "Task Flow is a project and task management tool.",
-    "homepage": "https://joyal-george-kj.github.io/Task-Flow",
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "start": "vite",
         "build": "vite build",
         "lint": "eslint .",
         "preview": "vite preview",

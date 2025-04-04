@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 function Task() {
     const { id } = useParams();
-    console.log(id);
 
     const projects = useSelector((state) => state.project[id]);
 
